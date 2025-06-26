@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('fonts/JetBrainsMono-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Italic';
+  src: url('fonts/JetBrainsMono-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 800;
+  font-style: italic;
+  font-display: swap;
+}
+
 :root {
   --color-bg: black;
   --color-fg: #4d4d4d;
@@ -6,10 +22,11 @@
   --color-link-hover: #ee6363;
 }
 
-html, body {
+html,
+body {
   background: var(--color-bg);
   color: var(--color-fg);
-  font-family: 'Courier New', 'Andalé Mono', 'Lucida Console', Monaco, monospace;
+  font-family: 'JetBrains Mono', 'JetBrains Mono Italic', monospace;
   height: 100%;
   width: 100%;
   margin: 0;
@@ -171,9 +188,11 @@ a:hover {
   0% {
     opacity: 1;
   }
+
   50% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -187,23 +206,23 @@ a:hover {
       "right";
     column-gap: 0;
   }
-  
+
   .left-container {
     display: none;
   }
-  
+
   .right-container {
     height: auto;
     width: 90%;
     padding: 20px;
     margin: 0 auto;
   }
-  
+
   .head {
     padding-top: 40px;
     font-size: 32px;
   }
-  
+
   .main-box {
     padding: 0 15px;
   }
@@ -214,27 +233,27 @@ a:hover {
     font-size: 24px;
     padding-top: 30px;
   }
-  
+
   .category {
     width: 100%;
   }
-  
+
   li {
     font-size: 14px;
   }
-  
+
   .entries {
     padding: 15px;
   }
-  
+
   .entries h1 {
     font-size: 20px;
   }
-  
+
   .entries p {
     font-size: 15px;
   }
-  
+
   .tag {
     font-size: 11px;
     padding: 2px 6px;
