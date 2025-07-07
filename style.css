@@ -81,7 +81,6 @@ body {
   word-wrap: break-word;
 }
 
-/* Blog Entry Styling */
 .entries {
   border-radius: 2px;
   padding: 20px;
@@ -123,7 +122,37 @@ body {
   padding-top: 12px;
 }
 
-/* Tag System */
+.entries img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border: 1px solid var(--color-fg);
+  padding: 4px;
+  background-color: rgba(77, 77, 77, 0.03);
+  transition: all 0.2s ease;
+  filter: grayscale(20%);
+}
+
+.entries img:hover {
+  border-color: var(--color-link);
+  background-color: rgba(77, 77, 77, 0.08);
+  filter: grayscale(0%);
+  transform: scale(1.01);
+}
+
+.image-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.image-caption {
+  color: var(--color-link);
+  font-size: 14px;
+  margin-top: 8px;
+  font-style: italic;
+}
+
 .tag {
   display: inline-block;
   background-color: rgba(77, 77, 77, 0.15);
@@ -144,7 +173,6 @@ body {
   text-decoration: none;
 }
 
-/* Navigation and Links */
 .bookmarks {
   display: flex;
 }
@@ -198,7 +226,6 @@ a:hover {
   }
 }
 
-/* Responsive Styles */
 @media (max-width: 1024px) {
   .container {
     grid-template-columns: 1fr;
